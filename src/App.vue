@@ -98,13 +98,13 @@ function updateLanguage(newval){
 </script>
 
 <template>
-<div class=" w-full py-4 px-2    flex flex-col justify-center items-center">
+<div :class="` w-full py-4 px-2    flex flex-col justify-center items-center ${language=='ENGLISH'?'font-myriad-pro':' font-almarai'}  `">
 <Header @updateLanguage="updateLanguage"/>
 <!---  mobile  main -->
 <main class=" flex flex-col  justify-center items-center w-full md:hidden  max-w-[420px] ">
   <section class="w-full flex flex-col justify-center items-center p-2">
     <div class="w-full  pt-20 bordering  rounded-b-[7%] bg-[#EFF3F4]">
-      <div class="w-full  h-full flex flex-col justify-end items-center rounded-b-[7%] shadow-2xl  bordering   bg-gradient-to-br p-1  from-[#e2a107] to-[#f4ba34] relative ">
+      <div class="w-full  h-full flex flex-col justify-end items-center rounded-b-[7%] shadow-2xl  bordering  p-1 bg-gradient-to-br   from-[#e2a107] to-[#f4ba34] relative ">
         <div class="w-28  aspect-square top-0  flex justify-center -translate-y-1/2   z-20 absolute">
           <img src="./assets/Photo Profile.png" alt="profil" class="   absolute bottom-1/2 translate-y-1/2 w-28 aspect-square rounded-full ring-4 ring-white">
           <div class="bg-[#64dd3a]  absolute bottom-3 right-2  origin-center translate-x-1/2 w-6 aspect-square rounded-full ring-4 ring-white"></div>

@@ -2,11 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-    font-family: 'Almarai';
-    src: url('/Oomotion/src/Fonts/Almarai-Bold.ttf') format('woff2');
-         
-    font-weight: normal;
-    font-style: normal;
+  
+  @font-face {
+    font-family: 'Almarai-Regular';
+    src: url('@/assets/fonts/Almarai-Regular.ttf') format('truetype');
   }
   
+  @font-face {
+    font-family: 'Almarai-Bold';
+    src: url('@/assets/fonts/Almarai-Bold.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'MyriadPro-Regular';
+    src: url('@/assets/fonts/MyriadPro-Regular.otf') format('opentype');
+  }

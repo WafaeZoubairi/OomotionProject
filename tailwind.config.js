@@ -7,7 +7,9 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'Almarai': 'Almarai', // Use the same font name as defined in @font-face
+        'almarai': ['Almarai-Regular', 'sans-serif'],
+        'almarai-bold': ['Almarai-Bold', 'sans-serif'],
+        'myriad-pro': ['MyriadPro-Regular', 'sans-serif'],
       },
     },
 
